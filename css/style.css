@@ -75,17 +75,17 @@ header {
     opacity: 50%;
 }
 
-main p {
+.main p {
     margin: 15px 0;
     color: hsl(0, 0%, 100%);
 }
 
-main p:first-child {
+.main p:first-child {
     font-size: 17px;
     font-weight: bold;
 }
 
-main p:last-child {
+.main p:last-child {
     opacity: 50%;
 }
 
@@ -97,11 +97,11 @@ main p:last-child {
     color: hsl(219, 29%, 14%);
 }
 
-.white-card main p:first-child {
+.white-card .main p:first-child {
     color: hsl(217, 19%, 35%);
 }
 
-.white-card main p:last-child {
+.white-card .main p:last-child {
     color: hsl(217, 19%, 35%);
 }
 
