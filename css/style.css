@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Barlow";
+    src: url(../fonts/BarlowSemiCondensed-Black.ttf) format('ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 13px;
+    background-color: #ECF2F7;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.testimonial {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    padding: 1.8em;
+    border-radius: 5px;
+}
+
+.purple-card {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% top;
+}
+
+.dark-gray-card {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.dark-blue-card {
+    background-color: hsl(219, 29%, 14%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 10px;
+}
+
+.card header img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 3px solid hsl(0deg 0% 95% / 38%);
+}
+
+.card header .person-name {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    color: hsl(0, 0%, 100%);
+}
+
+.person-name p {
+    line-height: normal;
+}
+
+.person-name p:last-child {
+    opacity: 50%;
+}
+
+main p {
+    margin: 15px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+main p:first-child {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+main p:last-child {
+    opacity: 50%;
+}
+
+.white-card {
+    background-color: white;
+}
+
+.white-card header .person-name {
+    color: hsl(219, 29%, 14%);
+}
+
+.white-card main p:first-child {
+    color: hsl(217, 19%, 35%);
+}
+
+.white-card main p:last-child {
+    color: hsl(217, 19%, 35%);
+}
+
+
+@media (min-width: 767px) {
+    .testimonial {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "purple purple purple purple dark-grey dark-grey kira-white kira-white"
+            "jentte-white jentte-white dark-blue dark-blue dark-blue dark-blue kira-white kira-white";
+        gap: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .testimonial>div:first-child {
+        grid-area: purple;
+    }
+
+    .testimonial>div:nth-child(2) {
+        grid-area: dark-grey;
+    }
+
+    .testimonial>div:nth-child(5) {
+        grid-area: kira-white;
+    }
+
+    .testimonial>div:nth-child(3) {
+        grid-area: jentte-white;
+    }
+
+    .testimonial>div:nth-child(4) {
+        grid-area: dark-blue;
+    }
+}
