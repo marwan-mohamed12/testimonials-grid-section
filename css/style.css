@@ -10,7 +10,7 @@
 }
 
 body {
-    font-size: 13px;
+    font-size: 0.8em;
     background-color: #ECF2F7;
 }
 
@@ -46,21 +46,21 @@ p {
     background-color: hsl(219, 29%, 14%);
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
     column-gap: 15px;
     margin-bottom: 10px;
 }
 
-.card header img {
+.card .header img {
     width: 42px;
     height: 42px;
     border-radius: 50%;
     border: 3px solid hsl(0deg 0% 95% / 38%);
 }
 
-.card header .person-name {
+.card .header .person-name {
     display: flex;
     flex-direction: column;
     row-gap: 3px;
@@ -81,7 +81,7 @@ header {
 }
 
 .main p:first-child {
-    font-size: 17px;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -93,7 +93,7 @@ header {
     background-color: white;
 }
 
-.white-card header .person-name {
+.white-card .header .person-name {
     color: hsl(219, 29%, 14%);
 }
 
